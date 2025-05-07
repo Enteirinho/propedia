@@ -13,6 +13,7 @@
   "license": "ISC",
   "description": "",
   "dependencies": {
+    "next": "^14.0.0",
     "bootstrap": "^5.3.6",
     "express": "^5.1.0"
   }
