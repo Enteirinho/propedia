@@ -138,37 +138,44 @@ export default function Home() {
     <section className="max-w-6xl mx-auto px-4 py-10">
   <h2 className="text-2xl font-bold mb-6 text-center">Complex samples</h2>
 
-      <main className="p-8">
-        <h1 className="text-2xl font-bold mb-6">Complex samples</h1>
-        <div className="overflow-x-auto">
-          <table className="min-w-full table-auto border-collapse">
-            <thead>
-              <tr className="bg-gray-100">
-                <th className="px-4 py-2 border">Complex</th>
-                <th className="px-4 py-2 border">Peptide size</th>
-                <th className="px-4 py-2 border">Receptor size</th>
-                <th className="px-4 py-2 border">Resolution (Å)</th>
-                <th className="px-4 py-2 border">Protein Name</th>
-                <th className="px-4 py-2 border">Classification</th>
-                <th className="px-4 py-2 border">Clusters</th>
-              </tr>
-            </thead>
-            <tbody>
-              {sampleData.map((s) => (
-                <tr key={s.complex} className="hover:bg-gray-50">
-                  <td className="px-4 py-2 border text-blue-600 underline cursor-pointer">{s.complex}</td>
-                  <td className="px-4 py-2 border">{s.peptideSize}</td>
-                  <td className="px-4 py-2 border">{s.receptorSize}</td>
-                  <td className="px-4 py-2 border">{s.resolution.toFixed(1)}</td>
-                  <td className="px-4 py-2 border">{s.proteinName}</td>
-                  <td className="px-4 py-2 border">{s.classification}</td>
-                  <td className="px-4 py-2 border">{s.clusters || '-'}</td>
-                </tr>
-              ))}
-            </tbody>
-          </table>
-        </div>
-      </main>
+<section className="container my-5">
+  <h1 className="h2 mb-4">Complex Samples</h1>
+  <div className="table-responsive">
+    <table className="table table-bordered table-hover">
+      <thead className="table-light">
+        <tr>
+          <th>Complex</th>
+          <th>Peptide Size</th>
+          <th>Receptor Size</th>
+          <th>Resolution (Å)</th>
+          <th>Protein Name</th>
+          <th>Classification</th>
+          <th>Clusters</th>
+        </tr>
+      </thead>
+      <tbody>
+        {sampleData.map((s) => (
+          <tr key={s.complex}>
+            <td>
+              <a href={`/complex/${s.complex.toLowerCase()}`} className="text-primary text-decoration-underline">
+                {s.complex}
+              </a>
+            </td>
+            <td>{s.peptideSize}</td>
+            <td>{s.receptorSize}</td>
+            <td>{s.resolution.toFixed(1)}</td>
+            <td>{s.proteinName}</td>
+            <td>{s.classification}</td>
+            <td>{s.clusters || '-'}</td>
+          </tr>
+        ))}
+      </tbody>
+    </table>
+  </div>
+  <div className="text-center mt-3">
+    <button className="btn btn-secondary">Show more...</button>
+  </div>
+</section>
 
   <div className="text-center mt-6">
     <button className="bg-gradient-to-b from-gray-100 to-gray-300 border border-gray-400 px-6 py-2 rounded shadow-sm text-gray-700 hover:bg-gray-200 transition">
