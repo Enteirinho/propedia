@@ -41,7 +41,7 @@ export default function Home() {
 
           <div className="logo-overlay" style={{ position: 'absolute', top: '90px', right: '270px', zIndex: 3, height: '60px' }}>
             <img src="/images/logo.png" alt="Logo" className="img-fluid" />
-             <div class="col-12"></div>
+             <div class="col-lg-6"></div>
           </div>
 
           <div className="container content-overlay" style={{ position: 'relative', zIndex: 2, paddingTop: '100px', marginTop: '50px', marginBottom: '40px' }}>
