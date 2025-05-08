@@ -8,7 +8,6 @@ export default function Page() {
     <>
       <Head>…</Head>
       <Header />
-      {/* Conteúdo igual ao exemplo acima */}
       <Footer />
     </>
   )
