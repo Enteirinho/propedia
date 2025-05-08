@@ -1,3 +1,5 @@
+import Head from 'next/head'
+import 'bootstrap/dist/css/bootstrap.min.css'
 import Header from '../components/Header'
 import Footer from '../components/Footer'
 
@@ -16,6 +18,15 @@ const sampleData = [
 export default function Home() {
   return (
     <>
+    <Head>
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link
+          href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+          rel="stylesheet"
+          integrity="sha384-ENjdO4Dr2bkBIFxQpeoQc4c+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"
+        />
+        <title>PROPEDIA</title>
+      </Head>
 
       <Header />
 
