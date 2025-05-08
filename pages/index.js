@@ -135,8 +135,6 @@ export default function Home() {
         </ul>
       </div>
     </main>
-    <section className="max-w-6xl mx-auto px-4 py-10">
-  <h2 className="text-2xl font-bold mb-6 text-center">Complex samples</h2>
 
 <section className="container-fluid px-0 my-5">
   <h1 className="h2 mb-4 px-2">Complex Samples</h1>
