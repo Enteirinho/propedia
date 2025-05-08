@@ -177,14 +177,6 @@ export default function Home() {
   </div>
 </section>
 
-  <div className="text-center mt-6">
-    <button className="bg-gradient-to-b from-gray-100 to-gray-300 border border-gray-400 px-6 py-2 rounded shadow-sm text-gray-700 hover:bg-gray-200 transition">
-      Show more...
-    </button>
-  </div>
-</section>
-
-
       <Footer />
     </>
   )
