@@ -138,10 +138,10 @@ export default function Home() {
     <section className="max-w-6xl mx-auto px-4 py-10">
   <h2 className="text-2xl font-bold mb-6 text-center">Complex samples</h2>
 
-<section className="container my-5">
-  <h1 className="h2 mb-4">Complex Samples</h1>
+<section className="container-fluid px-0 my-5">
+  <h1 className="h2 mb-4 px-2">Complex Samples</h1>
   <div className="table-responsive">
-    <table className="table table-bordered table-hover">
+    <table className="table table-bordered table-hover w-100 mb-0">
       <thead className="table-light">
         <tr>
           <th>Complex</th>
@@ -157,7 +157,10 @@ export default function Home() {
         {sampleData.map((s) => (
           <tr key={s.complex}>
             <td>
-              <a href={`/complex/${s.complex.toLowerCase()}`} className="text-primary text-decoration-underline">
+              <a
+                href={`/complex/${s.complex.toLowerCase()}`}
+                className="text-primary text-decoration-underline"
+              >
                 {s.complex}
               </a>
             </td>
@@ -176,6 +179,7 @@ export default function Home() {
     <button className="btn btn-secondary">Show more...</button>
   </div>
 </section>
+
 
       <Footer />
     </>
