@@ -1,7 +1,6 @@
 import Header from '../components/Header'
 import Footer from '../components/Footer'
 
-//Tabela exemplo.
 const sampleData = [
   { complex: '2wpv-B-C', peptideSize: 48, receptorSize: 283, resolution: 2.0, proteinName: 'CRYSTAL STRUCTURE OF S. CEREVISIAE GET4-GET5 COMPLEX', classification: 'PROTEIN BINDING', clusters: '' },
   { complex: '2x2c-R-S', peptideSize: 11, receptorSize: 165, resolution: 2.4, proteinName: 'ACETYL-CYPA:CYCLOSPORINE COMPLEX', classification: 'ISOMERASE/IMMUNOSUPPRESSANT', clusters: '' },
@@ -19,7 +18,7 @@ export default function Home() {
     <>
 
       <Header />
-      //logo
+
       <main>
         <section className="hero-section" style={{ position: 'relative', height: '100vh', overflow: 'hidden' }}>
           <img
@@ -52,7 +51,7 @@ export default function Home() {
             </div>
           </div>
         </section>
-      //caixas de texto fixo
+
         <div className="container my-5 h-" style={{minHeight: '300px'}}>
           <div className="row text-center">
             <div className="col-md-3 mb-4">
@@ -126,7 +125,7 @@ export default function Home() {
     </main>
     <section className="max-w-6xl mx-auto px-4 py-10">
   <h2 className="text-2xl font-bold mb-6 text-center">Complex samples</h2>
-//tabela
+
       <main className="p-8">
         <h1 className="text-2xl font-bold mb-6">Complex samples</h1>
         <div className="overflow-x-auto">
