@@ -1,7 +1,7 @@
 // components/Header.js
 import Link from 'next/link'
 import Image from 'next/image'
-import logo_propedia from '../public/images/logo_propedia.svg' // ajuste o caminho conforme a localização da imagem
+import logo_propedia from '../public/images/logo_propedia.svg'
 
 export default function Header() {
   return (
