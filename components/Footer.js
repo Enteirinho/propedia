@@ -24,10 +24,10 @@ export default function Footer() {
         {/* Logos */}
         <div className="d-flex flex-column flex-md-row align-items-center gap-4">
           <div className="text-center">
-            <Image src={ufmgLogo} alt="Logo UFMG" width={200} height={140} />
+            <Image src={ufmgLogo} alt="Logo UFMG" width={215} height={100} />
           </div>
           <div className="text-center">
-            <Image src={dccLogo} alt="Logo DCC" width={200} height={140} />
+            <Image src={dccLogo} alt="Logo DCC" width={260} height={100} />
           </div>
         </div>
 
